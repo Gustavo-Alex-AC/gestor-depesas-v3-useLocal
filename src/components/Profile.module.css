@@ -1,0 +1,33 @@
+.profile {
+    display: flex;
+    align-items: center;
+    /* gap: 8px; */
+
+    background: #D0D0D0 ;
+    color: #333333;
+    padding: 10px 15px;
+    border-radius: 11px;
+    /* box-shadow: 10px 10px rgba(0, 0, 0, 0.199); */
+   
+}
+
+.profile > *:not(:last-child){
+    margin-right: 8px;
+}
+
+.profileImg {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.app {
+    font-size: 1.5rem;
+    color: #1A1A1A;
+}
+
+.userName{
+    font-size: 1.2rem;
+    color: #555555;
+    font-weight: 400;
+}
+

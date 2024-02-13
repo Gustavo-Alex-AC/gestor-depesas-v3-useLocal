@@ -1,0 +1,30 @@
+.totalReceita {
+    background: #DADADA;
+    border:1px solid #F5F5F5;
+    color: #333333;
+    padding: 2rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.totalReceita h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+/* Phones 920px */
+
+@media (max-width: 34em) {
+    .totalReceita{
+        width: 380px;
+    }
+    }
+
+@media (max-width: 26em) {
+    .totalReceita{
+        width: 300px;
+    }
+    }

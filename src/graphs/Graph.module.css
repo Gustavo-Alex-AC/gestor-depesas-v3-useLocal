@@ -1,0 +1,49 @@
+.chartContainer  {
+    background-color: #DADADA;
+    height: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px; /* Adjust max-width as needed for your design */
+    width: 100%;
+    /* margin: 0 auto; */
+   
+}
+
+
+.chartContainer  h2 {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+
+/* Graph.module.css */
+
+/* .chartContainer {
+  width: 100%;
+  max-width: 800px; /* Adjust max-width as needed for your design 
+  margin: 0 auto;
+} */
+
+/* Adjust styles for different screen sizes using media queries */
+@media (max-width: 767px) {
+  .chartContainer {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .chartContainer {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .chartContainer {
+    padding: 30px;
+    font-size: 18px;
+  }
+}
+
+/* Add more media queries as needed for different device sizes */

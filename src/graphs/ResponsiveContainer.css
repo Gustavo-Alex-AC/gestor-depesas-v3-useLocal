@@ -1,0 +1,41 @@
+/* Example CSS for adjusting margins and paddings */
+@media (max-width: 767px) {
+    .recharts-wrapper {
+      margin: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .recharts-wrapper {
+      margin: 20px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .recharts-wrapper {
+      margin: 30px;
+    }
+  }
+  
+  /* Add more media queries as needed for different device sizes */
+/* Example CSS for adjusting font sizes */
+@media (max-width: 767px) {
+    .recharts-labels {
+      font-size: 12px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .recharts-labels {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .recharts-labels {
+      font-size: 16px;
+    }
+  }
+  
+  /* Add more media queries as needed for different device sizes */
+    

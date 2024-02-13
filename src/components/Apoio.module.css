@@ -1,0 +1,112 @@
+/* SupportComponent.module.css */
+/* Apoio.module.css */
+
+.supportContainer {
+  background-color: #F5F5F5; /* Neutral background color */
+  border-radius: 10px;
+  width: 100%; /* Adjusted to take full width */
+  max-width: 400px;
+  box-sizing: border-box;
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+  /* border: 1px solid #DADADA; Neutral border color */
+}
+
+.supportContainer h1 {
+  margin-bottom: 1.5rem; /* Adjusted margin for smaller screens */
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333333; /* Neutral text color */
+}
+
+.input,
+.textarea {
+  background-color: #FFFFFF; /* White background */
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #DADADA; /* Neutral border color */
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333333; /* Neutral text color */
+}
+
+.button {
+  /* background-color: #4caf50; */
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #4caf50;
+color: green;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.5rem;
+}
+
+.button:hover {
+  color: #F5F5F5;
+  background-color: #4caf50;
+}
+
+/* Adjust styles for different screen sizes using media queries */
+@media (max-width: 767px) {
+  .label {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .input,
+  .textarea {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .button {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Add more media queries as needed for different device sizes */
+
+
+  /* Phones 518px
+
+@media (max-width: 33em) {
+  .supportContainer{
+      width: 250;
+  }
+
+  .formContainer{
+    width: 250;
+  }
+
+  .input,
+  .textarea {
+    width: 250;
+  }
+
+}
+
+@media (max-width: 26em) {
+  .supportContainer{
+    width: 200;
+}
+
+.formContainer{
+  width: 200;
+}
+
+
+.input,
+.textarea {
+  width: 200;
+}
+} */

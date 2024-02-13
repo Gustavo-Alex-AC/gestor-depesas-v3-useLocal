@@ -1,0 +1,10 @@
+/**************************/
+/* BELOW 1452px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 90.75em) {
+    /* html {
+         9px / 16px  
+        font-size: 56.25%;
+      } */
+  }

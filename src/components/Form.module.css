@@ -1,0 +1,111 @@
+/* YourStylesheet.css */
+
+.formContainer {
+  background-color: #F5F5F5; /* Neutral background color */
+  /* padding: 20px; */
+  border-radius: 10px;
+  width: 400px;
+  box-sizing: border-box;
+  /* border: 1px solid #DADADA; Neutral border color */
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333333; /* Neutral text color */
+}
+
+.formGroup input,
+.formGroup select {
+  background-color: #FFFFFF; /* White background */
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #DADADA; /* Neutral border color */
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333333; /* Neutral text color */
+}
+
+.formGroup input::placeholder,
+.formGroup select::placeholder {
+  color: #666666; /* Placeholder color */
+}
+
+.formGroup button {
+  /* background-color: #D0D0D0; Neutral button background color */
+  /* color: #333333; Neutral button text color */
+  padding: 10px 15px;
+  /* border: none; */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonIn {
+  border: 1px solid green;
+  color: green;
+}
+
+.btnMargin {
+  margin-right: 8px;
+}
+
+.buttonEx {
+  border: 1px solid red;
+  color: red;
+}
+
+.buttonIn:hover{
+  color: #F5F5F5;
+  background-color: green;
+}
+
+.buttonEx:hover{
+  color: #F5F5F5;
+  background-color: red;
+}
+
+.formGroup select {
+  width: 40%;
+  margin-left: 60%;
+}
+
+/* Phones 920px */
+
+@media (max-width: 34em) {
+  .formGroup input,
+  .formGroup select {
+    width: 380px;
+  }
+
+  .formGroup select {
+    width: 40%;
+    margin-left: 55%;
+  }
+
+}
+
+@media (max-width: 26em) {
+  .formGroup input,
+  .formGroup select {
+    width: 300px
+  }
+
+  .formGroup select {
+    width: 40%;
+    margin-left: 35%;
+  }
+
+}
+

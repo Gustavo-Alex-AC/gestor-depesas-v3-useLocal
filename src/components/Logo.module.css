@@ -1,0 +1,17 @@
+.logo {
+    border-radius: 11px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.logo img {
+    display: inline-block;
+    border-radius: 11px;
+    margin: 1rem;
+    width: 25%;
+}
+
+.logo h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}

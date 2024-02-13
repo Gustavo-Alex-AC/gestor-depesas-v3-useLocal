@@ -1,0 +1,175 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 20px; */
+
+    background-color: #DADADA;
+    color: #333333;
+    border: 1px solid #DADADA;
+
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.item > *:not(:last-child){
+    margin-right: 20px;
+}
+
+.categoryContainer{
+    display: flex; 
+    align-items: center;
+    
+    margin-bottom: 1rem;
+}
+
+.categoryContainer > *:not(:last-child){
+    margin-right: 10px;
+}
+
+.categoryContainer p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.detailsContainer{
+    display: flex;
+    align-items: center;
+}
+
+.detailsContainer > *:not(:last-child){
+    margin-right: 20px;
+}
+
+.datails, .detailsItem {
+    display: flex;
+    align-items: center;
+}
+
+.datails > *:not(:last-child){
+    margin-right: 20px;
+}
+
+.detailsItem > *:not(:last-child){
+    margin-right: 20px;
+}
+
+/* .detailsItem{
+    gap: 10px;
+} */
+
+.detailsItem > *:not(:last-child){
+    margin-right: 10px;
+}
+
+.detailsItem p{
+   font-size: 1.4rem;
+}
+
+.icon{
+    font-size: 2.4rem;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 11px;
+}
+
+.button {
+    border: none;
+    background-color: #DADADA;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* Phones 535px */
+
+@media (max-width: 34em) {
+    .item {
+        
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        width: 300px;
+    }
+
+    .item > *:not(:last-child){
+        margin-right: 8px;
+    }
+
+    .categoryContainer p {
+        font-size: 1.6rem;
+        
+    }
+
+    .detailsContainer > *:not(:last-child){
+        margin-right: 8px;
+    }
+
+    .datails > *:not(:last-child){
+        margin-right: 8px;
+    }
+    
+    .detailsItem > *:not(:last-child){
+        margin-right: 5px;
+    }
+
+    
+    .detailsItem p{
+       font-size: 1.2rem;
+    }
+    
+    .icon{
+        font-size: 2.2rem;
+        border: 1px solid #fff;
+        padding: 10px;
+        border-radius: 11px;
+    }
+
+    .button {
+        margin-right: 10px;
+
+    }
+    
+    
+  }
+
+@media (max-width: 26em) {
+    .item {
+        gap: 5px;
+        padding: 8px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        width: 250px
+    }
+
+    .detailsContainer > *:not(:last-child){
+        margin-right: 6px;
+    }
+
+    .datails > *:not(:last-child){
+        margin-right: 6px;
+    }
+    
+    .detailsItem > *:not(:last-child){
+        margin-right: 5px;
+    }
+
+    
+    .detailsItem p{
+       font-size: 1rem;
+    }
+    
+    .icon{
+        font-size: 2rem;
+        border: 1px solid #fff;
+        padding: 8px;
+        border-radius: 11px;
+    }
+    
+    .button {
+        margin-right: 8px;
+    }
+  }

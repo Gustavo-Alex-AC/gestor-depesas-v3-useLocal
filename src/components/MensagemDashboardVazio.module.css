@@ -1,0 +1,63 @@
+.containerMsg {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.containerMsg h1, .containerMsg h2 {
+  margin-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 20px; */
+  text-align: center;
+}
+
+.buttonContainer > *:not(:last-child){
+    margin-right: 20px;
+}
+
+.botaoReceitaEstilo {
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 1.5rem;
+  background-color: green;
+}
+
+.botaoDespesaEstilo {
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 1.5rem;
+  background-color: red;
+}
+
+/* Media Query for screens up to 600px */
+@media (max-width: 600px) {
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 20px; */
+  }
+
+  
+.botaoReceitaEstilo:not(:last-child){
+  margin-bottom: 20px;
+}
+
+
+  .botaoReceitaEstilo,
+  .botaoDespesaEstilo {
+    width: 100%; /* Make buttons take full width on smaller screens */
+  }
+}

@@ -1,0 +1,52 @@
+/* InstructionPage.module.css */
+
+.instructionContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .instructionContainer h1 {
+    color: #333333;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .instructionContainer section {
+    margin-bottom: 20px;
+  }
+  
+  .instructionContainer h2 {
+    color: #4caf50; /* Green color for section headings */
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .instructionContainer p {
+    color: #555555;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+  
+  /* Adjust styles for smaller screens */
+  @media (max-width: 767px) {
+    .instructionContainer {
+      padding: 10px;
+    }
+  
+    .instructionContainer h1 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+  
+    .instructionContainer h2 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+  
+    .instructionContainer p {
+      font-size: 1.2rem;
+    }
+  }
+  
