@@ -26,6 +26,8 @@ function FormExpense() {
   function handleSubmit(e) {
     e.preventDefault();
 
+    alert("Expense submit click");
+
     const currentDate = getCurrentDate();
     const id = crypto.randomUUID();
 
