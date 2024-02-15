@@ -7,6 +7,7 @@ import Apoio from "./Apoio";
 import Dashboard from "./Dashboard";
 import Welcome from "../pages/auth/Welcome";
 import Protected from "../pages/auth/Protected";
+import PageNotFound from "../pages/auth/PageNotFound";
 
 //import SignIn from "../pages/auth/SignIn";
 
@@ -57,6 +58,7 @@ function App() {
                 </Protected>
               }
             />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
       </DataProvider>
