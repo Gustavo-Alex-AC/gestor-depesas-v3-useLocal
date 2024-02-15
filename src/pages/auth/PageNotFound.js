@@ -5,8 +5,7 @@ export default function PageNotFound() {
   return (
     <div>
       <h1>
-        Pagina não foi encontrada pelo servidor(404). Brevemente será superado
-        esse error 😢
+        Pagina não foi encontrada(404). Brevemente será superado esse error 😢
       </h1>
       <button onClick={navigate(-1)}>Voltar</button>
     </div>
