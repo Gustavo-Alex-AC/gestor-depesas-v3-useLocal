@@ -7,7 +7,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 function FormExpense() {
-  const { onExSubmit } = useData();
+  const { onExSubmit, onDelay } = useData();
 
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
@@ -15,18 +15,18 @@ function FormExpense() {
   const [category, setCategory] = useState("");
   const [reference, setReference] = useState("");
 
-  const getCurrentDate = () => {
-    const currentDate = new Date();
-    const month = String(currentDate.getMonth() + 1).padStart(2, "0");
-    const day = String(currentDate.getDate()).padStart(2, "0");
-    const year = currentDate.getFullYear();
-    return `${year}-${month}-${day}`;
-  };
+  // const getCurrentDate = () => {
+  //   const currentDate = new Date();
+  //   const month = String(currentDate.getMonth() + 1).padStart(2, "0");
+  //   const day = String(currentDate.getDate()).padStart(2, "0");
+  //   const year = currentDate.getFullYear();
+  //   return `${year}-${month}-${day}`;
+  // };
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    const currentDate = getCurrentDate();
+    //const currentDate = getCurrentDate();
     const id = crypto.randomUUID();
 
     const transaction = {
@@ -39,7 +39,7 @@ function FormExpense() {
     };
 
     onExSubmit(transaction);
-    //onDelay();
+    onDelay();
 
     setTitle("");
     setAmount("");

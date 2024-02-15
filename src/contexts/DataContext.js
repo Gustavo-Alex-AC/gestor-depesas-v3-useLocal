@@ -49,7 +49,19 @@ function DataProvider({ children }) {
   const balance = totalIncome - totalExpense;
   const isEmpty = incomes.length === 0 && expenses.length === 0;
 
-  //console.log("Receitas: ", incomes, "Balance:", balance);
+  const handleButtonClick = async () => {
+    // Set loading to true to indicate the delay is in progress
+    setLoading(true);
+
+    // Simulate a delay of 10 seconds
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    // Set loading to false after the delay
+    setLoading(false);
+
+    // Execute some code or just log a message
+    //console.log("Executing after a 10-second delay");
+  };
 
   return (
     <DataContext.Provider
@@ -62,7 +74,7 @@ function DataProvider({ children }) {
         onExSubmit: handleExpenseSubmit,
         onInDelete: handleInDelete,
         onExDelete: handleExDelete,
-        //onDelay: handleButtonClick,
+        onDelay: handleButtonClick,
         totalIncome,
         totalExpense,
         balance,
