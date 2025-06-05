@@ -1,6 +1,6 @@
 // SignIn.js
 import { Link } from "react-router-dom";
-import style from "./Auth.module.css"; // Adjust the path accordingly
+import style from "./AuthForm.module.css"; // Adjust the path accordingly
 import useLocalStorageState from "../../hooks/useLocalStorageState";
 
 const Welcome = () => {

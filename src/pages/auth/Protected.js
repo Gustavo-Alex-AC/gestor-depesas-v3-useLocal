@@ -1,19 +1,15 @@
 import { useEffect } from "react";
-import useLocalStorageState from "../../hooks/useLocalStorageState";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
 
 function Protected({ children }) {
-  const [username, setUsername] = useLocalStorageState([], "utilizador");
   const navigate = useNavigate();
+  const { isAuthenticated } = useAuth();
 
-  useEffect(
-    function () {
-      if (username.length === 0) navigate("/");
-    },
-    [navigate, username]
-  );
+  useEffect(() => {
+    if (!isAuthenticated) navigate("/");
+  }, [isAuthenticated, navigate]);
 
-  return username ? children : null;
+  return isAuthenticated ? children : null;
 }
-
 export default Protected;

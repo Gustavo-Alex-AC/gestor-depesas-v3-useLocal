@@ -1,0 +1,79 @@
+/* Auth.module.css */
+
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f6fa;
+  padding: 20px;
+}
+
+.authForm {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem; /* Aumentado um pouco */
+}
+
+.authForm h2 {
+  font-size: 1.75rem; /* Título um pouco maior */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup input {
+  padding: 12px;
+  font-size: 1.1rem; /* Texto do input maior */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.formGroup input:focus {
+  border-color: #5c8df6;
+}
+
+.authButton {
+  padding: 12px;
+  background-color: #5c8df6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem; /* Botão maior */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.authButton:hover {
+  background-color: #476cd2;
+}
+
+.authForm p {
+  text-align: center;
+  font-size: 1rem; /* Texto do parágrafo maior */
+}
+
+.authForm a {
+  color: #5c8df6;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem; /* Link maior */
+}
+
+.authForm a:hover {
+  text-decoration: underline;
+}
